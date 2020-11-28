@@ -34,7 +34,7 @@ public class Car
     this.registerNumber = registerNumber;
     this.year = year;
     this.price = price;
-    //this.owner = owner;
+    this.owner = owner;
   }
   
   public String getBrand()
