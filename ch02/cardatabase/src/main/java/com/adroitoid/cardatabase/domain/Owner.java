@@ -11,6 +11,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+
+
 @Entity
 public class Owner
 {
@@ -19,13 +21,9 @@ public class Owner
   private long ownerid;
   private String firstname, lastname;
 
-  // Owner.java  
-
   @OneToMany(cascade = CascadeType.ALL, mappedBy="owner")
   private List<Car> cars;
 
-  
-  
   public Owner() {}
 
   public Owner(String firstname, String lastname)
@@ -35,7 +33,6 @@ public class Owner
     this.lastname = lastname;
   }
 
-//Getter and setter
   public List<Car> getCars() {
     return cars;
   }
