@@ -8,8 +8,7 @@ import com.adroitoid.cardatabase.domain.Car;
 import com.adroitoid.cardatabase.domain.CarRepository;
 
 @RestController
-public class CarController
-{
+public class CarController {
     @Autowired
     private CarRepository repository;
 
